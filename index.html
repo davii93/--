@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#myinput{ background: #dff;
+		          font-size: 25px;
+		          padding: 10px;
+		          border: none;
+		          box-shadow: 0px 0px 4px gray inset;
+		          border-radius: 7px;
+		    }
+	</style>
+	<style type="text/css">
+		#myh{ background: ;
+		      font-size: 15px;
+		      padding: 5px;
+		      border: none;
+		      box-shadow: 0px 0px 3px gray inset;
+		      border-radius: 3px;
+      
+		               }
+	</style>
+	<style type="text/css">
+		 #myw{ background: ;
+		      font-size: 15px;
+		      padding: 5px;
+		      border: none;
+		      box-shadow: 0px 0px 3px gray inset;
+		      border-radius: 3px;
+	</style>
+	<style type="text/css">
+		 #mya{ background: ;
+		      font-size: 15px;
+		      padding: 5px;
+		      border: none;
+		      box-shadow: 0px 0px 3px gray inset;
+		      border-radius: 3px;
+	</style>
+</head>
+<body>
+	<input type="text" placeholder=" 이름을 입력하세요" id="myinput"><br><br>
+	기초대사량(BMR)을 계산해 봅시다.<br><br>
+	공식은 66+(13.8*몸무게)+(5*키)-(6.8*나이) 입니다.<br><br>
+	<input type="text"  placeholder="키를 입력하세요." id="myh"><br><br>
+	<input type="text"  placeholder="몸무게를 입력하세요." id="myw"><br><br>
+	<input type="text"  placeholder="나이를 입력하세요." id="mya"><br><br>
+	<input type="button" value=확인 id="okbut"><br><br>
+	<div id="monitor">당신의 기초대사량(BMR)은 000입니다.</div>
+	<script>
+
+		okbut.onclick = function (){
+			var sweight = 66+(myw.value *13.8)+(myh.value *5)-(mya.value *6.8);
+		    monitor.innerHTML = "당신의 기초대사량(BMR)은" + sweight + "입니다.";
+		}
+
+	</script>
+
+	
+
+</body>
+</html>
